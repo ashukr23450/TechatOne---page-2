@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;  
+}
+
+h1 {
+    padding-left:40px ;
+    margin-bottom: 20px;
+}
+
+.chart-clr{
+    display: flex;
+    position: relative;
+    left:190px;
+    top: -45px;
+    margin-bottom: 20px;
+} 
+
+.chart-clr div {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chart-clr span{
+    width: 15px;
+    height:15px;
+    display:inline-block;
+    margin-right:8px;
+}
+
+.chart-clr .positive {
+    background-color:#30B0C7;
+    border-radius: 50%;
+}
+
+.chart-clr .mixed {
+    background-color: #FACC15;
+    border-radius: 50%;
+}
+
+.chart-clr .negative {
+    background-color: #3B82F6;
+    border-radius: 50%;
+}
+
+.reviews {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.review-card{
+    background:linear-gradient(to right, #31B488 , #154E3B);
+    color: #fff;
+    border-radius:10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    box-sizing: border-box ;
+}
+
+#rate{
+    height: 45px;
+    width: 75px;
+    text-align: center;
+    background-color: #008C00;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.rating {
+    display: flex;
+}
+
+.review-card span{
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.stats {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.pie-chart {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 50%;
+    background: conic-gradient(
+        #1cb5b5 0% 70%,
+        #ffeb3b 70% 90%,
+        #2196f3 90% 100%
+    );
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .review-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .review-card {
+        width: calc(100% - 40px);
+    }
+}
