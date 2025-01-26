@@ -13,6 +13,7 @@ body {
     width: 90%;  
 }
 
+
 h1 {
     padding-left:40px ;
     margin-bottom: 20px;
@@ -26,11 +27,13 @@ h1 {
     margin-bottom: 20px;
 } 
 
+
 .chart-clr div {
     margin: 0 10px;
     display: flex;
     align-items: center;
 }
+
 
 .chart-clr span{
     width: 15px;
@@ -38,6 +41,7 @@ h1 {
     display:inline-block;
     margin-right:8px;
 }
+
 
 .chart-clr .positive {
     background-color:#30B0C7;
